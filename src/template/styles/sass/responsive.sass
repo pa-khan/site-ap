@@ -1,4 +1,4 @@
-@media screen and (max-width: 1199px)
+@media screen and (max-width: 1470px)
 	.case
 		width: 950px
 	
@@ -11,9 +11,45 @@
 
 	
 @media screen and (max-width: 992px)
+	.header
+		padding-top: 25px
+
+		&__content
+			padding-top: 140px
+
+		&__title
+			font-size: 52px
+			margin-top: 10px
+			margin-bottom: 10px
+		&__desc
+			font-size: 18px
+
+	.portfolio
+		margin-top: -390px
+
+	.desc
+		margin-top: 70px
+		margin-bottom: 100px
+		&__title
+			font-size: 28px
+			&:after
+				width: 60px
+				margin-top: 8px
+
+		&__text
+			letter-spacing: 0
+
+	
+	.footer
+		padding-bottom: 40px
+		&__socials
+			a
+				opacity: 1
+
+
 	.case
 		width: 750px
-
+	
 	.hidden-md
 		display: block		
 	
@@ -25,7 +61,76 @@
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
+	.panel
+		&__nav
+			width: 140px
+			li
+				width: 100%
+				margin-bottom: 9px
+				&:last-of-type
+					margin-bottom: 0
+	.header
+		background-image: url('../../img/header-mobile.png')
+		background-position: 55% 0
+		background-size: 1500px auto
+		&__subtitle
+			font-size: 14px
+			&:before, &:after
+				width: 40px
+				top: -2px
+			&:before
+				margin-right: 20px
+			&:after
+				margin-left: 20px
+		&__title
+			font-size: 30px
 
+		&__desc
+			font-size: 14px
+			letter-spacing: .56px
+
+		&__content
+			padding-top: 70px
+	.portfolio
+		margin-top: -530px
+		&__title
+			&:after
+				// height: 75px
+		&__list
+			margin-left: 0
+			margin-right: 0
+			height: auto !important
+		&__item
+			display: block
+			float: none
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+			position: static !important
+			img
+				margin-left: auto
+				margin-right: auto
+
+	.desc
+		margin-top: 40px
+		margin-bottom: 50px
+		&__title
+			font-size: 24px
+		&__text
+			line-height: 20px
+
+	.footer
+		padding-bottom: 25px
+		.case
+			flex-direction: column
+		&__copy
+
+		&__socials
+			margin-right: auto
+			margin-top: 13px
+			margin-bottom: 15px
+			
+			
 	.hidden-sm
 		display: block
 	
